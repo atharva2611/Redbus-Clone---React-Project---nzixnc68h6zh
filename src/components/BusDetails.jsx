@@ -1,23 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export const BusDetails = ({ filter, data, data2, setShow }) => {
-  // localStorage.setItem(
-  //   "ticketPrice",
-  //   filter.map((ticket) => ticket.ticketPrice)
-  // );
-  // console.log(filter.map((ticket) => ticket.ticketPrice));
+export const BusDetails = ({ filter, setShow, sortByName, sortByDeparture, sortByArrival, sortByPrice }) => {
+
   const navigate = useNavigate();
-  const [sortCriteria, setSortCriteria] = useState("price");
-  const handleSortCriteriaChange = (e) => {
-    setSortCriteria(e.target.value);
-  };
-  var sortedFilter = [...filter].sort((a, b) => {
-    if(sortCriteria === "price"){
-      return a.ticketPrice - b.ticketPrice;
-    };
-  
-  })
   return (
     <div id="bus-details">
       <div id="sortby">
@@ -25,26 +11,24 @@ export const BusDetails = ({ filter, data, data2, setShow }) => {
           <h1>SORT BY: </h1>
         </div>
         <div id="details-of-sorting">
-          <div id="schedule">
+          <div id="schedule" onClick={sortByName}>
             <h3>Name</h3>
           </div>
-          <div id="schedule">
-            <h3>Departure</h3>
-          </div>
-          <div id="schedule">
+          <div id="schedule" onClick={sortByArrival}>
             <h3>Arrival</h3>
           </div>
-          <div id="schedule">
-            
-            <h3 onChange={handleSortCriteriaChange} value={sortCriteria} >Price</h3>
-              
-          
+          <div id="schedule" onClick={sortByDeparture}>
+            <h3>Departure</h3>
+          </div>
+          <div id="schedule" onClick={sortByPrice}>
+            <h3>Price</h3>
           </div>
         </div>
       </div>
 
       <div id="bus-layer">
-        {sortedFilter.map((user, index) => (
+        {filter &&
+          filter.map((user, index) => (
             <div
               id="bus-list"
               onClick={() => {
@@ -58,12 +42,12 @@ export const BusDetails = ({ filter, data, data2, setShow }) => {
               </div>
               <div id="bus-list-schedule">
                 <h3>
-                  Departure Time <br /> {user.departureTime}
+                  Arrival Time <br /> {user.arrivalTime}
                 </h3>
               </div>
               <div id="bus-list-schedule">
                 <h3>
-                  Arrival Time <br /> {user.arrivalTime}
+                  Departure Time <br /> {user.departureTime}
                 </h3>
               </div>
               <div id="bus-list-schedule">

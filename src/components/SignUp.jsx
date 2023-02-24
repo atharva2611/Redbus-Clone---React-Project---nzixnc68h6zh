@@ -49,6 +49,7 @@ export const SignUp = (props) => {
             alert("password length is short");
         } else {
             localStorage.setItem("userData", JSON.stringify([...data, inpval]));
+            navigate("/Login");
         }
     };
 

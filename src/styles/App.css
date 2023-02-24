@@ -5,17 +5,13 @@
 }
 
 #main-duplicate {
-    /* background-color: rgb(217, 217, 217); */
     width: 45%;
-    /* margin: 100px auto; */
     position: relative;
     top: 184px;
     left: 270px;
-    /* margin-top: 100px; */
     margin-bottom: 0;
     padding: 20px;
     display: flex;
-    /* justify-content: space-around; */
 }
 
 
@@ -49,7 +45,6 @@
 }
 
 #navbar-right a {
-    /* padding-right: 90px; */
     color: white;
     position: relative;
     bottom: 13px;
@@ -78,17 +73,7 @@
 
 /* Source */
 
-#from {
-    /* padding: 20px; */
-}
-
-#from label {
-    /* font-size: 600;
-    padding-bottom: 5px; */
-}
-
 #from input {
-    /* border: rgb(217,217,217) block; */
     width: 210px;
     outline: none;
     padding: 18px;
@@ -103,7 +88,6 @@
 
 #switching button {
     border-radius: 50%;
-    /* padding: 10px; */
     border: none;
     outline: none;
     margin-top: 25px;
@@ -112,7 +96,6 @@
     cursor: pointer;
     position: relative;
     left: 12px;
-    /* z-index: 1; */
     height: 25px;
     width: 25px;
 }
@@ -124,17 +107,7 @@
 
 /* Destination */
 
-#to {
-    /* padding: 20px; */
-}
-
-#to label {
-    /* font-size: 600;
-    padding-bottom: 5px; */
-}
-
 #to input {
-    /* border: rgb(217,217,217) block; */
     outline: none;
     width: 210px;
     height: 10px;
@@ -145,17 +118,7 @@
 
 /* Date Selection */
 
-#traveling-date {
-    /* padding: 18px; */
-}
-
-#traveling-date label {
-    /* font-size: 600;
-    padding-bottom: 5px; */
-}
-
 #traveling-date input {
-    /* border: rgb(217,217,217) block; */
     height: 40px;
     width: 165px;
     outline: none;
@@ -182,8 +145,6 @@
     bottom: 16px;
     right: 0px;
     position: relative;
-    /* border-radius: 20%; */
-    /* top: 0px; */
 }
 
 .search-bus button:hover {
@@ -230,7 +191,6 @@
 #details {
     display: flex;
     justify-content: space-evenly;
-    /* background-color: #d55457; */
     background-color: white;
     height: 500px;
     position: relative;
@@ -244,7 +204,6 @@
 
 #heading h1 {
     color: #d55457;
-    /* color: white; */
     font-size: 100px;
     position: relative;
     top: -134px;
@@ -256,8 +215,6 @@
 }
 
 #png img {
-    /* padding-top: 150px;
-    padding-right: 80px; */
     padding: 55px 10px;
     height: 400px;
     color: transparent;
@@ -313,13 +270,11 @@
 #bus-list {
     display: flex;
     justify-content: space-evenly;
-    /* padding-bottom: 10px; */
     cursor: pointer;
     margin-bottom: 10px;
 }
 
 #bus-list:hover {
-    /* background-color: aqua; */
     background-color: whitesmoke;
     border: 2px solid black;
 }
@@ -327,7 +282,6 @@
 #bus-list-schedule {
     width: 100%;
     height: auto;
-    /* margin: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,7 +312,6 @@
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -382,7 +335,6 @@
     flex-direction: column;
     width: 60%;
     margin-top: 40px;
-    /* padding-top: 200px; */
     background-color: white;
     height: 200px;
 }
@@ -394,11 +346,9 @@
     display: flex;
     justify-content: space-evenly;
     padding-right: 100px;
-    /* background-color: aquamarine; */
 }
 
 #mainTop {
-    /* background-color: rgb(22, 228, 15); */
     width: 30%;
     margin: 10px 20px;
     display: flex;
@@ -420,11 +370,6 @@
 .top1:hover {
     background-color: palegoldenrod;
 }
-
-
-/* #top1:active {
-    background-color: yellow;
-} */
 
 .top2 {
     background-color: rgb(219, 219, 219);
@@ -448,11 +393,9 @@
     display: flex;
     justify-content: space-evenly;
     padding-right: 100px;
-    /* background-color: aquamarine; */
 }
 
 #mainBottom {
-    /* background-color: rgb(22, 228, 15); */
     width: 30%;
     margin: 10px 20px;
     display: flex;
@@ -495,7 +438,6 @@
     padding: 20px 60px;
     font-size: 20px;
     font-weight: 700;
-    /* padding: 20px; */
 }
 
 #book-ticket button:hover {
@@ -527,10 +469,7 @@
     background-image: url("https://st.redbus.in/Images/INDOFFER/FESTIVE200/Hero01.png");
     background-position-x: center;
     background-repeat-y: no-repeat;
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     height: 450px;
-
 }
 
 #home {
@@ -549,7 +488,6 @@
     right: 10%;
     width: 320px;
     max-height: 250px;
-    /* overflow: hidden; */
     transition: max-height 0.5s;
 }
 
@@ -560,12 +498,10 @@
 .sub-menu {
     background: #fff;
     padding: 10px;
+    width: 90px;
     margin: 10px;
     border: 0.5px solid black;
     border-radius: 4px;
-
-    /* for testing  */
-
     right: -90px;
     position: absolute;
     top: -580px;
@@ -592,10 +528,10 @@
 
 .sub-menu-link p {
     color: black;
-    width: 100%;
+    width: 65px;
+    right: -8px;
     position: relative;
     top: 10px;
-    /* background-color: #e5e5e5; */
 }
 
 .sub-menu-link span {
@@ -628,9 +564,6 @@
 }
 
 #close-btn {
-    /* height: 15px; */
-    /* float: right; */
-    /* width: 15px; */
     font-size: 30px;
     font-weight: bolder;
     position: relative;

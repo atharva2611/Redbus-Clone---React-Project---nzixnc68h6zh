@@ -25,6 +25,8 @@ const App = () => {
   const [filter, setFilter] = useState([]);
   const [show, setShow] = useState({});
   const [layOver, setLayOver] = useState(1); // id: overlay
+  const [count, setCount] = useState(1);
+
 
   function compareName(a, b) {
     if (a.busName < b.busName) {
@@ -93,6 +95,8 @@ const App = () => {
       <Nav
         layOver={layOver}
         setLayOver={setLayOver}
+        count={count}
+        setCount={setCount}
       />
       <div id="forBG">
 
@@ -147,6 +151,8 @@ const App = () => {
               <Login
                 layOver={layOver}
                 setLayOver={setLayOver}
+                count={count}
+                setCount={setCount}
               />}
           />
           <Route

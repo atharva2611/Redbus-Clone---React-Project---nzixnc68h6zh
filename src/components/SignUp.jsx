@@ -62,24 +62,27 @@ export const SignUp = (props) => {
             <div id="main">
                 <div id="child1">
                     <form>
-                        <label htmlFor="name">Name: </label>
+                        <p id="s-page-title">Sign Up</p>
+                        <label htmlFor="name" id="s-name-label">Name: </label>
                         <input
-                            onChange={getdata} type="name" placeholder="Enter your name" id="name" name="name" /><br />
-                        <label htmlFor="Email">Email: </label>
+                            onChange={getdata} type="name" placeholder="Enter your name" id="s-name" name="name" /><br />
+                        <label htmlFor="Email" id="s-email-label">Email: </label>
                         <input
                             onChange={getdata} type="email"
-                            placeholder="Enter your email" id="email" name="email" /><br />
-                        <label htmlFor="password">Password: </label>
+                            placeholder="Enter your email" id="s-email" name="email" /><br />
+                        <label htmlFor="password" id="s-password-label">Password: </label>
                         <input
                             onChange={getdata} type="password"
-                            placeholder="Enter your password" id="password" name="password" /><br /><br />
-                        <button onClick={addData} type="submit">Sign Up</button><br />
+                            placeholder="Enter your password" id="s-password" name="password" /><br /><br />
+                        <button onClick={addData} type="submit" id="signup-btn">Sign Up</button><br />
                     </form>
                 </div>
                 <div id="child2">
-                    <p>Already have an account?
-                        <button><NavLink to="/Login">Log in</NavLink></button>
+                    <p id="alt-text-2">Already have an account? 
+                        <button><NavLink to="/Login"> Log in</NavLink></button>
                     </p>
+                    <p id="alt-text-3">By signing up, you agree to our
+                        Terms & Conditions and Privacy Policy</p>
                 </div>
             </div>
         </div>

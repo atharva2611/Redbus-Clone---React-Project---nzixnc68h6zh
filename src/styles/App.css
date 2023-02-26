@@ -611,3 +611,153 @@
     left: -16px;
     position: relative;
 }
+
+#l-page-title {
+    font-size: xxx-large;
+    position: relative;
+    top: 20px;
+    left: -3px;
+    font-family: math;
+    font-weight: bold;
+}
+
+#l-email-label {
+    position: relative;
+    top: 75px;
+}
+
+#l-email {
+    top: 84px;
+    padding: 8px;
+    left: -3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 333px;
+    position: relative;
+}
+
+#l-password-label {
+    position: relative;
+    top: 115px;
+}
+
+#l-password {
+    position: relative;
+    top: 123px;
+    padding: 8px;
+    left: -3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 333px;
+}
+
+#login-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #d84f56;
+    position: relative;
+    top: 170px;
+    font-size: medium;
+    color: white;
+    width: 329px;
+    padding: 5px;
+}
+
+#login-btn:hover {
+    background-color: #d2212f;
+}
+
+#login-btn:hover {
+    background-color: #d2212f;
+}
+
+#signup-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #d84f56;
+    position: relative;
+    top: 168px;
+    font-size: medium;
+    color: white;
+    width: 318px;
+    left: -5px;
+    padding: 5px;
+}
+
+#alt-text {
+    position: relative;
+    top: 185px;
+    left: 6px;
+}
+
+#s-page-title {
+    left: -5px;
+    font-size: xxx-large;
+    position: relative;
+    top: 5px;
+    font-family: math;
+    font-weight: bold;
+}
+
+#s-name-label {
+    position: relative;
+    top: 34px;
+    left: -5px;
+}
+
+#s-name {
+    position: relative;
+    top: 41px;
+    padding: 8px;
+    left: -5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 320px;
+}
+
+#s-password-label {
+    position: relative;
+    top: 113px;
+    left: -5px;
+}
+
+#s-password {
+    position: relative;
+    top: 120px;
+    padding: 8px;
+    left: -5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 320px;
+}
+
+#s-email-label {
+    position: relative;
+    top: 72px;
+    left: -5px;
+}
+
+#s-email {
+    position: relative;
+    top: 80px;
+    padding: 8px;
+    left: -5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 320px;
+}
+
+#alt-text-2 {
+    position: relative;
+    top: 157px;
+    text-align: center;
+    left: -5px;
+}
+
+#alt-text-3 {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    text-decoration: underline;
+    left: -9px;
+}

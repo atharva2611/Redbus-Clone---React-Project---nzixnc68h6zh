@@ -65,7 +65,7 @@ export const Login = (props) => {
                 } else {
                     console.log("user login succesfully");
                     localStorage.setItem("forStateChangeData", JSON.stringify(5));
-                    if(props.count === 0){
+                    if (props.count === 0) {
                         props.setCount(1);
                     } else {
                         props.setCount(0);
@@ -86,17 +86,18 @@ export const Login = (props) => {
             </div>
             <div className="right-panel">
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="email">Email: </label>
-                    <input 
+                    <p id="l-page-title">Login</p>
+                    <label id="l-email-label" htmlFor="email">Email: </label>
+                    <input
                         onChange={getdata}
-                        type="email" placeholder="Enter your email" id="email" name="email" /><br />
-                    <label htmlFor="password">Password: </label>
-                    <input 
+                        type="email" placeholder="Enter your email" id="l-email" name="email" /><br />
+                    <label id="l-password-label" htmlFor="password">Password: </label>
+                    <input
                         onChange={getdata}
-                        type="password" placeholder="Enter your password" id="password" name="password" /><br />
-                    <button onClick={addData} type="submit">Log In</button>
+                        type="password" placeholder="Enter your password" id="l-password" name="password" /><br />
+                    <button onClick={addData} type="submit" id="login-btn">Log In</button>
                 </form>
-                <p>Don't have an account?
+                <p id="alt-text">Don't have an account?
                     <button><NavLink to="/SignUp">Sign Up</NavLink></button>
                 </p>
             </div>

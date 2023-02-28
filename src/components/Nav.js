@@ -42,7 +42,7 @@ export default function Nav(props) {
     toggleMenu();
   }
 
-  let subMenu = document.getElementById("subMenu");
+  // let subMenu = document.getElementById("subMenu");
 
   function toggleMenu() {
     if (checked)
@@ -62,10 +62,10 @@ export default function Nav(props) {
         <img src={profile} id="profile" onClick={toggleMenu} />
         <span id="show-user-name" style={{ color: "white" }}></span>
         {checked ?
-          <div className="sub-menu-wrap" id="subMenu">
+          // <div className="sub-menu-wrap" id="subMenu">
             <div className="sub-menu">
-              <div className="user-info">
-              </div>
+              {/* <div className="user-info">
+                </div> */}
               {state == 1 ?
                 <Link
                   onClick={changeState}
@@ -76,7 +76,6 @@ export default function Nav(props) {
                     <p
                       onClick={openLoginForm}
                     >Log in</p>
-                    <span>&gt;</span>
                   </div>
                 </Link>
                 :
@@ -91,7 +90,7 @@ export default function Nav(props) {
                 </Link>
               }
             </div>
-          </div>
+          // </div>
           : ""}
       </div>
     </div>

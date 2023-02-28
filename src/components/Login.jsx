@@ -82,10 +82,10 @@ export const Login = (props) => {
         <div className="signin-login-form" style={{ background: "lightblue" }}>
             <span id="close-btn" onClick={closeOverlay}>×</span>
             <div className="left-panel">
-                <img src={leftImg} alt="" />
+                <img id="l-panel-img" src={leftImg} alt="" />
             </div>
             <div className="right-panel">
-                <form onSubmit={handleSubmit}>
+                <form id="l-form" onSubmit={handleSubmit}>
                     <p id="l-page-title">Login</p>
                     <label id="l-email-label" htmlFor="email">Email: </label>
                     <input
@@ -96,10 +96,10 @@ export const Login = (props) => {
                         onChange={getdata}
                         type="password" placeholder="Enter your password" id="l-password" name="password" /><br />
                     <button onClick={addData} type="submit" id="login-btn">Log In</button>
-                </form>
-                <p id="alt-text">Don't have an account?
+                <p id="l-alt-text-1">Don't have an account?
                     <button><NavLink to="/SignUp">Sign Up</NavLink></button>
                 </p>
+                </form>
             </div>
         </div>
     )
